@@ -5,41 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Dashboard</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
     <link src="stylesheet" href="./Assets/styles.css">
-    <!-- <link src="stylesheet" href="./Assets/styles.css"/> -->
+
   </head>
 
-  <body class="col-sm-4 bg-light">
+  <body>
     <div>
       <header>
-        <nav class="jumbotron container-fluid mt-2 text-center p-2">
-          <h1><strong>Weather Dashboard</strong></h1>
-        </nav>
+        <nav class="bg-primary bg-gradient text-center text-white">
+          <div></div>
+            <h1>Weather Dashboard</h1>
+         </nav>
       </header>
     </div>
     <main>
       <!-- Search New City -->
-      <div>
-        <h4 class="pt-1"><strong>Search for a City:</strong></h2>
-        <input type="text" class="city" />
-        <button class="searchBtn bg-primary text-light">Search</button>
+      <div class="navbar navbar-expand-lg navbar-light bg-light fixed-left">
+        <div>
+        <h4><strong>Search for a City:</strong></h2>
+        <input type="text" class="city col " placeholder="Tampa"/>
+        <button class="searchBtn bg-primary text-light row">Search</button>
+        </div>
+
+        <!-- Searched History -->
+        <!--locale storage-->
+        <div class="searchedCities"></div>
       </div>
 
-      <!-- Searched History -->
-      <!--locale storage-->
-      <div class="searchedCities col-sm-8"></div>
-
-      <!-- Current weather -->
-      <div class="current" class="row ml-2 border border-dark rounded">
-        <h4>Current Weather Forecast</h4>
-        <div id="current"></div>
-      </div>
+        <!-- Current weather -->
+        <div class="current col">
+          <h4>Current Weather Forecast</h4>
+          <div id="current"></div>
+        </div>
 
       <!-- 5 day forecast -->
       <div class="forecast">
@@ -49,10 +48,9 @@
       </div>
       <div></div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./Assets/script.js"></script>
   </body>
-
-  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="./Assets/script.js"></script>
 </html>
