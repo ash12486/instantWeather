@@ -10,8 +10,8 @@ var lon;
 var searchedCities = document.querySelector(".searchedCities");
 
 //display current date
-var today = dayjs().format('M/D/YYYY');
-$('#todays-date').text(today);
+var today = dayjs().format("M/D/YYYY");
+$("#todays-date").text(today);
 
 //fetch current weather
 function getCurrentWeather() {
@@ -38,7 +38,7 @@ function getCurrentWeather() {
       console.log(data);
 
       let titleDiv = document.createElement("div");
-      titleDiv.innerHTML = data.name + " (" + today +")";
+      titleDiv.innerHTML = data.name + " (" + today + ")";
 
       let titleIcon = document.createElement("img");
       titleIcon.src =
@@ -74,8 +74,7 @@ function forecastData() {
         let forecastDiv = document.createElement("div");
         forecastDiv.style.border = "1px solid black";
 
-        let titleDate = document.createElement("div");
-        titleDate.innerHTML = (today+1);
+        let titleDate = new Date(forecastList[i].dt * 1000);
 
         let titleIcon = document.createElement("img");
         titleIcon.src =
@@ -84,16 +83,19 @@ function forecastData() {
           "@2x.png";
 
         let tempDiv = document.createElement("div");
-        tempDiv.innerHTML = "Temp : " + forecastList[i].main.temp + "°";;
+        tempDiv.innerHTML = "Temp : " + forecastList[i].main.temp + "°";
 
         let windDiv = document.createElement("div");
-        windDiv.innerHTML = "Wind Speed : " + forecastList[i].wind.speed+ "mph";
+        windDiv.innerHTML =
+          "Wind Speed : " + forecastList[i].wind.speed + "mph";
 
         let humidDiv = document.createElement("div");
-        humidDiv.innerHTML = "Humidity : " + forecastList[i].main.humidity+ "%";
+        humidDiv.innerHTML =
+          "Humidity : " + forecastList[i].main.humidity + "%";
 
         forecastDiv.append(titleDate, titleIcon, tempDiv, windDiv, humidDiv);
         parentDiv.append(forecastDiv);
+        console.log(titleDate);
       }
       forecastEl.innerHTML = "";
       forecastEl.append(parentDiv);
