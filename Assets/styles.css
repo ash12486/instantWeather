@@ -1,0 +1,27 @@
+#header { 
+    background: linear-gradient(45deg, #4b6cb7 0%, #182848 100%);
+    color: azure;
+}
+
+#forecast-cards > div {
+    background: linear-gradient(45deg, #4b6cb7 0%, #274175 100%);
+}
+
+#btn {
+    background :#4b6cb7 !important;
+}
+
+#btn:hover {
+    background :#4c6cb7 !important;
+    opacity: .9;
+}
+
+.list-group > li {
+    text-transform: uppercase;
+}
+
+.list-group-item:hover {
+    background :#a4b6e0 !important;
+    opacity: .9;
+    cursor: pointer;
+}
