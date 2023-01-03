@@ -24,9 +24,9 @@ Live URL: https://ash12486.github.io/instantWeather/
 
 ![Homepage](./Assets/Images/homepage.png)
 
-![SearchedCity1](./Assets/Images/SearchedCity1.png
+![SearchedCity1](./Assets/Images/SearchedCity1.png)
 
-![SearchedCity2](./Assets/Images/SearchedCity2.png
+![SearchedCity2](./Assets/Images/SearchedCity2.png)
 
 ## MOCK-UP IMAGE
 This is what the result should look like.
