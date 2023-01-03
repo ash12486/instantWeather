@@ -31,7 +31,7 @@ Live URL: https://ash12486.github.io/instantWeather/
 ## MOCK-UP IMAGE
 This is what the result should look like.
 
-![mock-up](./assets/Images/mock-up.png)
+![mock-up](./Assets/Images/mock-up.png)
 
 ## DESIGNER NOTES
 - This program uses an API to pull weather data from https://openweathermap.org/api
